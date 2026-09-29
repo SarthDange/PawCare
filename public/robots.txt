@@ -1,0 +1,13 @@
+# PawCare robots.txt
+
+User-agent: *
+
+# Public pages can be crawled
+Allow: /
+
+# Private administration pages should not be indexed
+Disallow: /admin.html
+Disallow: /login.html
+
+# Sitemap
+Sitemap: https://www.pawcare.example/sitemap.xml

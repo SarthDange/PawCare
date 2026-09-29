@@ -1,0 +1,25 @@
+{
+  "name": "pawcare",
+  "version": "1.0.0",
+  "description": "PawCare Pet Care & Wellness Center website",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "keywords": [
+    "pet-care",
+    "pawcare",
+    "express",
+    "sqlite"
+  ],
+  "author": "PawCare",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "sqlite3": "^5.1.7"
+  }
+}

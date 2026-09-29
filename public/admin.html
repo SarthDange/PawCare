@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- Private administration page -->
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <meta
+        name="description"
+        content="PawCare administrator dashboard for managing appointment requests and contact enquiries."
+    >
+
+    <title>
+        PawCare | Admin Dashboard
+    </title>
+
+    <link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body>
+
+    <!-- Shared header -->
+    <div id="header"></div>
+
+
+    <main class="admin-page">
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    PawCare Administration
+                </p>
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+                <p>
+                    Manage appointment requests and contact enquiries
+                    from one place.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="admin-content">
+
+            <div class="container">
+
+                <!-- Dashboard Header -->
+                <div class="admin-dashboard-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Overview
+                        </p>
+
+                        <h2>
+                            Welcome to PawCare
+                        </h2>
+
+                        <p id="adminWelcomeMessage">
+                            Loading your admin account...
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        id="logoutButton"
+                        class="button button-secondary"
+                        type="button"
+                    >
+                        Log Out
+                    </button>
+
+                </div>
+
+
+                <!-- Dashboard Messages -->
+                <div
+                    id="adminMessage"
+                    class="form-message"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- Appointment Requests -->
+                <section class="admin-section">
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <p class="eyebrow">
+                                Appointments
+                            </p>
+
+                            <h2>
+                                Appointment Requests
+                            </h2>
+
+                            <p>
+                                Review appointment requests submitted
+                                by PawCare visitors.
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            id="appointmentCount"
+                            class="admin-count"
+                        >
+                            0 requests
+                        </span>
+
+                    </div>
+
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Pet Owner
+                                    </th>
+
+                                    <th>
+                                        Pet
+                                    </th>
+
+                                    <th>
+                                        Service
+                                    </th>
+
+                                    <th>
+                                        Preferred Date
+                                    </th>
+
+                                    <th>
+                                        Preferred Time
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="appointmentsTableBody">
+
+                                <tr>
+
+                                    <td colspan="6">
+                                        Loading appointments...
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Contact Enquiries -->
+                <section class="admin-section">
+
+                    <div class="admin-section-header">
+
+                        <div>
+
+                            <p class="eyebrow">
+                                Messages
+                            </p>
+
+                            <h2>
+                                Contact Enquiries
+                            </h2>
+
+                            <p>
+                                Review messages submitted through
+                                the PawCare contact form.
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            id="contactCount"
+                            class="admin-count"
+                        >
+                            0 enquiries
+                        </span>
+
+                    </div>
+
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Name
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Subject
+                                    </th>
+
+                                    <th>
+                                        Message
+                                    </th>
+
+                                    <th>
+                                        Date
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="contactsTableBody">
+
+                                <tr>
+
+                                    <td colspan="5">
+                                        Loading enquiries...
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Shared footer -->
+    <div id="footer"></div>
+
+
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>

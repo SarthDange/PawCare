@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- Private administration page -->
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <meta
+        name="description"
+        content="PawCare administrator login."
+    >
+
+    <title>
+        PawCare | Admin Login
+    </title>
+
+    <link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body>
+
+    <!-- Shared header -->
+    <div id="header"></div>
+
+
+    <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    PawCare Administration
+                </p>
+
+                <h1>
+                    Admin Login
+                </h1>
+
+                <p>
+                    Sign in to manage appointment requests and
+                    contact enquiries.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Login Form -->
+        <section class="form-section">
+
+            <div class="container">
+
+                <div class="form-container">
+
+                    <div class="section-heading">
+
+                        <p class="eyebrow">
+                            Secure Access
+                        </p>
+
+                        <h2>
+                            Administrator Sign In
+                        </h2>
+
+                        <p>
+                            This area is restricted to authorized
+                            PawCare administrators.
+                        </p>
+
+                    </div>
+
+
+                    <form id="loginForm">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="button"
+                        >
+                            Sign In
+                        </button>
+
+
+                        <div
+                            id="loginMessage"
+                            class="form-message"
+                            aria-live="polite"
+                        ></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Shared footer -->
+    <div id="footer"></div>
+
+
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>

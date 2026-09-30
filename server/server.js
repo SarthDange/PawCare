@@ -5,7 +5,7 @@ const path = require("path");
 const session = require("express-session");
 
 // Load database connection
-require("./database");
+const db = require("./database");
 
 // Load API routes
 const authRoutes = require("./routes/auth");
@@ -62,10 +62,26 @@ app.get("/api/health", (req, res) => {
 
 // Home page
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "public", "index.html"));
+    res.sendFile(
+        path.join(__dirname, "..", "public", "index.html")
+    );
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`PawCare server running at http://localhost:${PORT}`);
-});
+
+// Start server only after database initialization
+db.ready
+    .then(() => {
+        app.listen(PORT, () => {
+            console.log(
+                `PawCare server running at http://localhost:${PORT}`
+            );
+        });
+    })
+    .catch((error) => {
+        console.error(
+            "Unable to start PawCare server:",
+            error.message
+        );
+
+        process.exit(1);
+    });
